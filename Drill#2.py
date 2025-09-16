@@ -50,8 +50,8 @@ while True:
     elif circle_move==True:
         x = middle_x + radius * math.cos(angle)
         y = middle_y + radius * math.sin(angle)-10
-        angle+=0.03
-        if angle>=2*math.pi+3*math.pi/2:
+       angle-=0.03
+        if angle<=-math.pi/2:
             angle=3*math.pi/2
             circle_move=False
 
